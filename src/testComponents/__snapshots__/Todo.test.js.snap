@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo component is working correctly matches snapshot 1`] = `
+<todo
+  todo={
+    Object {
+      "completed": false,
+      "id": 1,
+      "text": "Pasar los test 2",
+    }
+  }
+/>
+`;

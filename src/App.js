@@ -1,7 +1,7 @@
 import "./App.css";
 //import AxiosCRUDExample from "./components/pure/AxiosCRUDExample";
-import NotificationManager from "./components/pure/NotificationManager";
-import Updater from "./components/seviceWorker/Updater";
+//import NotificationManager from "./components/pure/NotificationManager";
+//import Updater from "./components/seviceWorker/Updater";
 //import AxiosExample from "./components/pure/AxiosExample"
 //import FetchExample from "./components/pure/FetchExample"
 //import OpcionalRender from "./components/pure/opcionalRender"
@@ -13,9 +13,15 @@ import Updater from "./components/seviceWorker/Updater";
 //import Ejemplo1 from "./hooks/Ejemplo1"
 //import AsyncExample from "./components/pure/AsyncExample"
 //import ObservableExample from "./components/pure/ObservableExample"
+import Todo from "./testComponents/Todo";
 
 function App() {
   /* const version = "app-v3-front"; */
+  const todos = [
+    { id: 1, text: "Hacer la cama", completed: true },
+    { id: 2, text: "Cocinar", completed: false },
+    { id: 3, text: "Aprender programación", completed: false },
+  ]
   return (
     <div className="App">
       {/* <h1>Versión {version}</h1> */}
@@ -52,11 +58,13 @@ function App() {
 
       {/* <AxiosExample /> */}
       {/* <AxiosCRUDExample /> */}
-      <NotificationManager />
+      {/* <NotificationManager /> */}
 
       {/* Proyecto final */}
       {/* <TaskListComponent /> */}
-      <Updater />
+      {/* <Updater /> */}
+      <h1>Bienvenid@</h1>
+      {todos.map(todo => <Todo todo={todo}/>)}
     </div>
   );
 }
